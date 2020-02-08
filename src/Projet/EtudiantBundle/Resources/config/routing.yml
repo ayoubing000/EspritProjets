@@ -1,0 +1,21 @@
+projet_etudiant_homepage:
+    path:     /
+    defaults: { _controller: ProjetEtudiantBundle:Default:index }
+
+readProjet:
+    path:     /projet/read
+    defaults: { _controller: ProjetEtudiantBundle:Projet:readProjet }
+
+
+deleteProjet:
+    path:     /projet/delete/{id}
+    defaults: { _controller: ProjetEtudiantBundle:Projet:deleteProjet }
+
+
+CreateEtudiant:
+    path:     /create
+    defaults: { _controller: ProjetEtudiantBundle:Etudiant:createEtudiant }
+
+CompteEtudiant:
+    path:     /compte/{id}
+    defaults: { _controller: ProjetEtudiantBundle:Projet:compteE }

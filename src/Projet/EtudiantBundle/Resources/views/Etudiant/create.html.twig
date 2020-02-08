@@ -1,0 +1,11 @@
+<h1>Ajouter etudiant</h1>
+
+{{ form_start(form) }}
+<table>
+    <tr><td>Matricule</td><td>{{ form_widget(form.matricule) }}</td></tr>
+    <tr><td>Nom</td><td>{{ form_widget(form.nom) }}</td></tr>
+    <tr><td>Prenom</td><td>{{ form_widget(form.prenom) }}</td></tr>
+    <tr><td>Niveau</td><td>{{ form_widget(form.niveau) }}</td></tr>
+    <tr><td>Num Classe</td><td>{{ form_widget(form.numclasse) }}</td></tr>
+</table>
+{{ form_end(form) }}

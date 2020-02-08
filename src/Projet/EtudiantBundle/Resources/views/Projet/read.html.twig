@@ -1,0 +1,23 @@
+<h1>Liste des projets</h1>
+
+<table border="1">
+    <tr>
+        <th>ID</th>
+        <th>Titre</th>
+        <th>Description</th>
+        <th>Niveau</th>
+        <th></th>
+        <th></th>
+    </tr>
+    {% for p in projets %}
+    <tr>
+        <td>{{ p.id }}</td>
+        <td>{{ p.titre }}</td>
+        <td>{{ p.description }}</td>
+        <td>{{ p.niveau }}</td>
+        <td><a href="{{ path('deleteProjet',{'id':p.id}) }}">Supprimer</a></td>
+        <td><a href="{{ path('CompteEtudiant',{'id':p.id}) }}">Calculer</a></td>
+    </tr>
+    {% endfor %}
+</table>
+<a href="{{ path('CreateEtudiant') }}">Affecter etudiant</a>
